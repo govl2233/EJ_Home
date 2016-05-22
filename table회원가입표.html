@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>table.test</title>
+</head>
+<body>
+<h1>사용자정보</h1>
+<form>
+<fieldset>
+  <legend>회원가입</legend>
+
+      <table border="1" width="50%" summary="">
+        <caption>회원가입</caption>
+
+        <colgroup>
+            <col width="15% "></col>
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <th scope="row"><label for="name">이름</label></th>
+            <td><input type="text" id="name"  placeholder="이름"/> </td>
+            <th rowspan="5" scope="rowgroup"><label for="file">사진</label>
+            <input type="file" id="flie"></th>
+          </tr>
+          <tr>
+            <th scope="row"><label for=age>나이</label></th>
+            <td><input type="text" id="age" placeholder="나이"/></td>
+          </tr>
+          <tr>
+            <th scope="row"> <label for="region">지역</label></th>
+            <td><input type="radio" name="region" id="서울"/> <label for="서울">서울</label>
+            <input type="radio" name="region" id="경기"/> <label for="경기">경기</label>
+            <input type="radio" name="region" id="강원"/> <label for="강원">강원</label>
+            <input type="radio" name="region" id="충남"/> <label for="충남">충남</label>
+            <input type="radio" name="region" id="경남"/> <label for="경남">경남</label>
+            <input type="radio" name="region" id="제주"/> <label for="제주">제주</label></td>
+          </tr>
+          <tr>
+            <th scope="row"> <label for="marital status">결혼여부</label></th>
+            <td><input type="radio" name="marital status" id="미혼"/><label for="미혼">미혼</label>
+            <input type="radio" name="marital status" id="기혼"/><label for="기혼">기혼</label></td>
+          </tr>
+          <tr>
+            <th scope="row"> <label for="address">주소</label></th>
+            <td><input type="text" id="address"/></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="가입경로">가입경로</label></th>
+            <td><input type="checkbox" name="가입경로" id="인터넷"/><label for="인터넷">인터넷</label>
+            <input type="checkbox" name="가입경로" id="tv"/><label for="tv">방송</label>
+            <input type="checkbox" name="가입경로" id="지인"/><label for="지인">지인</label></td>
+          </tr>
+          <tr>
+            <th colspan="3" scope="colgroup"> <input type="reset" value="초기화" />
+            <input type="submit" value="확인" />
+            <input type="button" value="취소" /> </th>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+</fieldset>
+</form>
+
+
+
+</body>
+</html>
